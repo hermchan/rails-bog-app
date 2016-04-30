@@ -1,7 +1,12 @@
+<h1>Creatures</h1>
+<hr>
 <% @creatures.each do |f| %>
 <p>
   <strong>Name : </strong><%= f.name %>
+
   <strong>Description : </strong><%= f.description %>
 </p>
-
+<hr>
 <% end %>
+
+  <%= link_to "Create a New Creature", new_creature_path(@creature), class: "btn btn-default col-md-6 col-md-offset-3" %>
