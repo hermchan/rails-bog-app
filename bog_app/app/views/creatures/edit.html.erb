@@ -1,4 +1,4 @@
-<%= form_for :creature, url: "/creatures", method: "post" do |f| %>
+<%= form_for @creature do |f| %>
 
 <div class="form-group col-md-6 col-md-offset-3">
   <%= f.label :Name %>
@@ -7,7 +7,7 @@
   <div class="form-group col-md-6 col-md-offset-3">
   <%= f.label :Description %>
   <%= f.text_area :description, class:"form-control"%>
-  <%= f.submit "Create", class: "btn btn-block btn-success col-md-4"%>
+  <%= f.submit "Save edit", class: "btn btn-block btn-success col-md-4"%>
   <%= link_to "Back", creatures_path(@creature), class: "btn btn-block btn-primary col-md-4"%>
   </div>
 
