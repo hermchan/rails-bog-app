@@ -1,1 +1,9 @@
-<h1>hi</h1>
+<h1>Creatures</h1>
+<hr>
+<% @creatures.each do |c| %>
+<p>
+  <strong>Name: </strong><%= c.name %>
+  <strong>Description: </strong><%= c.description %>
+  <hr>
+</p>
+<% end %>
