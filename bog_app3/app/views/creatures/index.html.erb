@@ -1,0 +1,10 @@
+<h1>Creatures</h1>
+<hr>
+<p>
+  <% @creature.each do |c| %>
+  <strong>Name: </strong> <%= c.name %>
+  <strong>Description: </strong> <%= c.description %>
+</p>
+<hr>
+
+<% end %>
