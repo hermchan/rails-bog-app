@@ -1,0 +1,8 @@
+<h1>New Creature Form</h1>
+<hr>
+
+<%= form_for :creature, url: "/creatures", method: "post" do |c| %>
+  <%= c.text_field :name %>
+  <%= c.text_field :description %>
+  <%= c.submit "Save" %>
+<% end %>
